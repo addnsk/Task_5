@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class House : MonoBehaviour
 {
     [SerializeField] private Thief _thief;

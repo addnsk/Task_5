@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody2D))]
+
 public class Thief : MonoBehaviour
 {
 
     private Rigidbody2D _rigidbody2D;
-    public bool isHouse;
+    public bool isHouse { get; private set; }
 
     void Start()
     {
